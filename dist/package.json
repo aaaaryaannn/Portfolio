@@ -1,11 +1,11 @@
 {
   "author": {
     "name": "Aryan Varale",
-    "url": "https://aryvar.netlify.app/	"
+    "url": "https://aryvar.netlify.app/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaaaryaannn/Portfolio.git"
+    "url": "git+https://github.com/aaaaryaannn/Portfolio/tree/a655f985170073d565ea851378f0a6f55cd3afed/dist"
   },
   "license": "MIT",
   "name": "retro-computer-website",

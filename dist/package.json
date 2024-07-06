@@ -5,7 +5,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaaaryaannn/Portfolio/tree/a655f985170073d565ea851378f0a6f55cd3afed/dist"
+    "url": "git+https://github.com/aaaaryaannn/Portfolio.git"
   },
   "license": "MIT",
   "name": "retro-computer-website",
@@ -27,5 +27,10 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.8",
     "vite-plugin-checker": "^0.6.4"
-  }
+  },
+
+  "scripts": {
+  "dev": "vite --no-open"
+}
+
 }

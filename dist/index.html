@@ -432,7 +432,8 @@
 
 
         <hr /> or <hr/>
-        <form name="contact" method="POST" data-netlify="true">
+           <div class="main clearfix">
+        <form name="contact" id="nl-form"  class="nl-form" method="POST" data-netlify="true">
           <p>
             I/We <label><input type="text" name="name" placeholder="Name" required /></label> would like to 
             <label>
@@ -488,7 +489,9 @@
             <label id="contact-label"></label>
           </p>
           <p>
-            <button type="submit">Get in touch</button>
+            <div class="nl-submit-wrap">
+            <button class="nl-submit" type="submit">Get in touch</button>
+            </div>
           </p>
           <script>
             function handleActionChange() {
@@ -553,8 +556,10 @@
             }
           </script>
         </form>
+</div>
+        </section>
         
-        
+      
 
       </section>
     </main>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aryan Varale – Portfolio</title>
+    <meta
+      name="description"
+      content="I am Aryan pursuing Computer Science degree majoring in Cyber Security at MIT ADT 
+      University. I have a passion for all things related to technology and design, from software
+      engineering to UI/UX."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=0.9,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Aryan Varale – Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#abdbe3" />
+
+    <meta property="og:title" content="Aryan Varale – Personal Website" />
+    <meta property="og:type" content="website" />
+  <meta
+      name="og:description"
+      content="I am Aryan pursuing Computer Science degree majoring in Cyber Security at MIT ADT 
+      University. I have a passion for all things related to technology and design, from software
+      engineering to UI/UX and 3d graphics"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" crossorigin src="/assets/index-BsDWKmnv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DClCMbvC.css">
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>Aryan </h1>
+      <ul>
+        <li>Creative Developer</li>
+        <li>Computer Science graduate of the University of Melbourne</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/aryan-varale-9bb542227/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+            H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+            c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="Resume_2024.pdf"
+            target="_blank"
+            style="font-size: 0.75rem; padding: 8px; padding-left: 10px"
+          >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16L12 2" stroke="#abdbe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 10L12 16L6 10" stroke="#abdbe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 18H20" stroke="#abdbe3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          I am Aryan pursuing Computer Science degree majoring in Cyber Security at MIT ADT University. 
+          I have a passion for all things related to technology and design, from software engineering to 
+          UI/UX.
+          In addition to my love of technology and design, I am also interested in physics and outer space.
+        </p>
+
+        <p>
+          Below are details of some of projects I have developed over my journey till now.	
+        </p>
+      </section>
+
+      <section>
+        <h1 id="projects">Projects</h1>
+        <hr />
+        
+        <div class="project-container">
+          <div class="description">
+            <h2>AI legal Documentation</h2>
+            <h3>2023-24</h3>
+            <ul class="skills">
+              <li>Webdev</li>
+              <li>LLM</li>
+              <li>AI</li>
+              <li>Word-Prediction</li>
+              <li>NLP</li>
+            </ul>
+            <p>
+              Legal AI Documentation System was my mini-project in the 4th semester as a 
+              Computer Science student. I often find legal language difficult to understand, 
+              so I started working on a solution. I wanted to create a tool that could help me 
+              and others like me understand legal documents more easily. I used AI and Deep learning technology
+              not only to understand the legal language but also to draft document.
+            </p>
+            <button
+              class="collapse-btn btn"
+              collapsed="true"
+              onclick="this.setAttribute('collapsed', this.getAttribute('collapsed') === 'true'? 'false' : 'true')"
+            >
+              more...
+            </button>
+        
+            <div class="collapse-body">
+              <p>
+                Legal AI Documentation System is founded on the concept that the most effective way to
+                 assist legal professionals with documentation management is to automate and streamline 
+                 the process, reducing the time and effort required for manual review and analysis. 
+                 I achieved this by developing a cutting-edge AI engine that analyzes and processes legal 
+                 documents with high accuracy, dramatically decreasing the need for manual review. This has 
+                 the additional benefit of appealing to legal teams and professionals who want to manage their
+                  documentation more efficiently and focus on higher-value tasks.
+
+              </p>
+              <p>
+                
+                  Almost every aspect of the Legal AI Documentation System is custom-built, with the UI/UX and branding 
+                  designed to provide a seamless user experience. The system is built using advanced technologies such as 
+                  deep learning and natural language processing, and the AI engine is trained on a small dataset of legal 
+                  documents as mini project but will look forward to enhance it in future.
+
+              </p>
+            </div>
+          </div>
+        
+          <div class="image-container">
+            <img
+              src="/assets/ADL-o-LmbhQa.png"
+              width="100%"
+              alt="AI legal Documentation screenshot"
+              style="aspect-ratio: 1330 / 924; cursor: pointer;"
+              onclick="openModal()"
+            />
+          </div>
+        </div>
+        <hr />
+        
+        <div class="project-container-2">
+          <div class="description2">
+            <a><h2  href="https://mute-surf-0748.animaapp.io/">nCreep</h2> </a>
+            <h3>2024</h3>
+            <ul class="skills2">
+              <li>3d Modelling</li>
+              <li>Figma</li>
+              <li>UI/UX</li>
+              <li>Frontend Development</li>
+            </ul>
+            <p>
+              nCreeps is a leading provider of red teaming solutions, renowned for its proactive approach to cybersecurity.
+              During my one-month internship at nCreeps, I had the privilege of working under the guidance of Team Leader
+              Miss Aishani Juneja. My primary responsibility was to create 3D animations for the company's website.
+             
+            </p>        
+          </div>
+          <div class="image-container">
+            <video
+            style="width: 520px;   height: 700; "
+            alt="nCreep Video"
+            onclick="openModal()" muted autoplay loop>
+            <source src="/assets/nCreeps-CRryWtQo.mp4">
+                  </video>
+          
+          </div>
+        </div>
+        
+    
+            
+              
+
+        <hr />
+        
+
+        <div class="project-container">
+          <div class="description">
+            <h2>FinBlock</h2>
+            <h3>2023</h3>
+            <ul class="skills">
+              <li>Seaborn</li>
+              <li>MatPlot Lib</li>
+              <li>Statastic</li>
+            </ul>
+            <p>
+              FinBlock is short form for Financial Block. This project is centralized to give companies a graphical representation
+              of their sales and analyze the lowest selling component of their company. By which they can further enhance 
+              quality and resolve drawbacks of the product easily.
+            </p>
+          </div>
+          
+          <div class="image-container">
+            <img
+              src="/assets/Finblock-DsLocrAH.png"
+              alt="Finblock screenshot"
+              onclick="openModal()"
+            />
+          </div>
+        </div>
+        
+        
+              
+          
+        
+      </section>
+
+      <section>
+        <h1 id="contact">Case Studies</h1>
+      <hr />
+        <div class="project-wrapper">
+          <div class="column-1">
+            <div class="image-container3">
+              <img
+                src="/assets/riptide-oiyDuchn.png"
+                alt="Finblock screenshot"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description3">
+              <h2>Riptide</h2><br>
+              <h3>Dec 2022</h3>
+              <ul class="skills3">
+                <li>Figma</li>
+                <li>Miro</li>
+              </ul>
+              <p class="para">
+                Riptide was case study for FinBlock in my First Year of engineering.
+              </p>
+            </div>
+          </div>
+        
+          <div class="column-2">
+            <div class="image-container3">
+              <img
+                src="/assets/sahay-d7oIh3Bl.png"
+                alt="Finblock screenshot"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description3">
+              <h2>Sahay</h2><br>
+              <h3>Feb 2023</h3>
+              <ul class="skills3">
+                <li>Figma</li>
+                <li>Offline Interviews</li>
+              </ul>
+              <p class="para">
+                Sahay was designed with idea to help students to easily volunteer in any NGO work. It was part of UI compitition organized by Swift Club.
+              </p>
+            </div>
+          </div>
+        </div>
+                        
+        </section>
+
+        <section>
+          <h1 id="contact">Work Experience</h1>
+        <hr />
+        <div class="project-wrapper">
+          <!-- Column One -->
+          <div class="column-one">
+            <div class="image-container-one">
+              <img
+                src="/assets/Denner-Bi-jDpVs.png"
+                alt="Denner Logo"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description-one">
+              <h2>Denner</h2> <br>
+              <h3>March 2024 - Present</h3>
+              <ul class="skills-one">
+                <li>Backend Media</li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- Column Two -->
+          <div class="column-two">
+            <div class="image-container-two">
+              <img
+                src="/assets/nCreeps-B562h9za.png"
+                alt="nCreep Logo"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description-two">
+              <h2>nCreeps</h2>
+              <h3>March 2024 - April 2024</h3>
+              <ul class="skills-two">
+                <li>UI/UX Intern</li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- Column Three -->
+          <div class="column-three">
+            <div class="image-container-three">
+              <img
+                src="/assets/PaloAlto-PIfmZES6.png"
+                alt="Palo Alto Networks"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description-three">
+              <h2>Palo Alto Networks</h2>
+              <h3>May 2024 - June 2024</h3>
+              <ul class="skills-three">
+                <li>Cybersecurity Intern</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-wrapper">
+          <div class="column-4">
+            <div class="image-container4">
+              <img
+                src="/assets/amazon-BAkiAYRy.jpg"
+                alt="Amazon Logo"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description4">
+              <h2>Amazon</h2><br>
+              <h3>July 2023 - Dec 2024</h3>
+              <ul class="skills4">
+                <li>Tech Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-wrapper">
+          <div class="column-5">
+            <div class="image-container5">
+              <img
+                src="/assets/Flourpicker-PW4lKaI1.jpg"
+                alt="FlourPicker Logo"
+                onclick="openModal()"
+              />
+            </div>
+        
+            <div class="description5">
+              <h2>FlourPicker</h2>
+              <h3>July 2021 - Dec 2021</h3>
+              <ul class="skills5">
+                <li>Intern</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+          </div>
+                          
+          </section>
+
+          <section>
+            <h1 id="contact">Testimonals</h1>
+            <p style="text-align: center; font-size: 24px">
+              Coming soon...
+              </p>
+              </section>
+
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+  
+            <a href="https://www.linkedin.com/in/aryan-varale-9bb542227/" style="text-decoration: none;">
+              <h3 style="font-size: 14px; margin: 0;">LinkedIn</h3>
+            </a> or  <a href="https://www.instagram.com/aaryeano/" style="text-decoration: none;">
+              <h3 style="font-size: 14px; margin: 0;">Instagram</h3>
+            </a>
+        </p>
+          
+
+
+        <hr /> or <hr/>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            I/We <label><input type="text" name="name" placeholder="Name" required /></label> would like to 
+            <label>
+              <select name="action" id="action" onchange="handleActionChange()" required>
+                <option value="" selected>choose an option</option>
+                <option value="collaborate">collaborate</option>
+                <option value="have a conversation">have a conversation</option>
+                <option value="hire your services">hire your services</option>
+                <option value="engage in an activity">engage in an activity</option>
+              </select>
+            </label>
+          </p>
+          <p id="topic-field" style="display:none;">
+            with you regarding 
+            <label>
+              <select name="topic" id="topic" onchange="handleTopicChange()">
+                <option value="" selected>select a topic</option>
+                <option value="an upcoming project">an upcoming project</option>
+                <option value="our website">our website</option>
+                <option value="a conference">a conference</option>
+                <option value="physics">physics</option>
+                <option value="neuroscience">neuroscience</option>
+                <option value="outerspace">outerspace</option>
+              </select>
+            </label>
+          </p>
+          <p id="date-field" style="display:none;">
+            Can we schedule a meeting on <label><input type="text" name="date" placeholder="select a date" /></label>
+          </p>
+          <p id="location-field" style="display:none;">
+            in Pune at 
+            <label>
+              <select name="location">
+                <option value="" selected>choose a location</option>
+                <option value="Blue Tokai, Koregaon Park">Blue Tokai, Koregaon Park</option>
+                <option value="Mauji, Shivajinagar">Mauji, Shivajinagar</option>
+                <option value="Online meet">Online meet</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            You can contact me through 
+            <label>
+              <select name="contact_method" id="contact-method" onchange="toggleContactInput()" required>
+                <option value="" selected>choose a contact method</option>
+                <option value="instagram">Instagram</option>
+                <option value="phone">Phone Number</option>
+                <option value="gmail">Gmail</option>
+              </select>
+            </label>
+          </p>
+          <p id="contact-field" style="display:none;">
+            <label id="contact-label"></label>
+          </p>
+          <p>
+            <button type="submit">Get in touch</button>
+          </p>
+          <script>
+            function handleActionChange() {
+              var action = document.getElementById("action").value;
+              var topicField = document.getElementById("topic-field");
+              var dateField = document.getElementById("date-field");
+              var locationField = document.getElementById("location-field");
+        
+              if (action === "hire your services") {
+                dateField.style.display = "block";
+                topicField.style.display = "none";
+                locationField.style.display = "block";
+              } else if (action === "collaborate") {
+                dateField.style.display = "none";
+                topicField.style.display = "block";
+                locationField.style.display = "none";
+              } else if (action === "have a conversation") {
+                dateField.style.display = "none";
+                topicField.style.display = "block";
+                locationField.style.display = "none";
+              } else {
+                dateField.style.display = "none";
+                topicField.style.display = "none";
+                locationField.style.display = "none";
+              }
+            }
+        
+            function handleTopicChange() {
+              var topic = document.getElementById("topic").value;
+              var dateField = document.getElementById("date-field");
+              var locationField = document.getElementById("location-field");
+        
+              if (topic === "an upcoming project") {
+                dateField.style.display = "block";
+                locationField.style.display = "block";
+              } else if (topic === "outerspace") {
+                dateField.style.display = "none";
+                locationField.style.display = "block";
+              } else {
+                dateField.style.display = "none";
+                locationField.style.display = "none";
+              }
+            }
+        
+            function toggleContactInput() {
+              var contactMethod = document.getElementById("contact-method").value;
+              var contactField = document.getElementById("contact-field");
+              var contactLabel = document.getElementById("contact-label");
+        
+              if (contactMethod === "phone") {
+                contactLabel.innerHTML = 'Phone Number: <input type="text" name="contact_id" placeholder="Your Phone Number" required />';
+                contactField.style.display = "block";
+              } else if (contactMethod === "gmail") {
+                contactLabel.innerHTML = 'Gmail ID: <input type="email" name="contact_id" placeholder="Your Gmail ID" required />';
+                contactField.style.display = "block";
+              } else if (contactMethod === "instagram") {
+                contactLabel.innerHTML = 'Instagram ID: <input type="text" name="contact_id" placeholder="Your Instagram ID" required />';
+                contactField.style.display = "block";
+              } else {
+                contactField.style.display = "none";
+              }
+            }
+          </script>
+        </form>
+        
+        
+
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    <footer>
+      <h2><div>Developed by Aryan Varale.</div></h2>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>
+        Inspired by Edwardh Hinrichsen
+      </div>
+      <div>
+      </div>
+    </footer>
+
+
+    
+
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NGHQL33BC7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NGHQL33BC7");
+    </script>
+  </body>
+</html>

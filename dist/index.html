@@ -432,63 +432,40 @@
 
 
         <hr /> or <hr/>
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    I/We <label><input type="text" name="name" placeholder="Name" required /></label> would like to 
-    <label>
-      <select name="action" id="action" onchange="handleActionChange()" required>
-        <option value="" selected>choose an option</option>
-        <option value="collaborate">collaborate</option>
-        <option value="have a conversation">have a conversation</option>
-        <option value="hire your services">hire your services</option>
-        <option value="engage in an activity">engage in an activity</option>
-      </select>
-    </label>
-    with you regarding 
-    <label>
-      <select name="topic" id="topic" onchange="handleTopicChange()" required>
-        <option value="" selected>select a topic</option>
-        <option value="an upcoming project">an upcoming project</option>
-        <option value="our website">our website</option>
-        <option value="a conference">a conference</option>
-        <option value="physics">physics</option>
-        <option value="neuroscience">neuroscience</option>
-        <option value="outerspace">outerspace</option>
-      </select>
-    </label>.
-  </p>
-  <p id="date-field">
-    Can we schedule a meeting on <label><input type="text" name="date" placeholder="select a date" /></label>
-  </p>
-  <p id="location-field">
-    in Pune at 
-    <label>
-      <select name="location">
-        <option value="" selected>choose a location</option>
-        <option value="Blue Tokai, Koregaon Park">Blue Tokai, Koregaon Park</option>
-        <option value="Mauji, Shivajinagar">Mauji, Shivajinagar</option>
-        <option value="Online meet">Online meet</option>
-      </select>
-    </label>
-  </p>
-  <p>
-    You can contact me through 
-    <label>
-      <select name="contact_method" id="contact-method" onchange="toggleContactInput()" required>
-        <option value="" selected>choose a contact method</option>
-        <option value="instagram">Instagram</option>
-        <option value="phone">Phone Number</option>
-        <option value="gmail">Gmail</option>
-      </select>
-    </label>
-  </p>
-  <p id="contact-field">
-    <label id="contact-label"></label>
-  </p>
-  <p>
-    <button type="submit">Get in touch</button>
-  </p>
-          </form>
+        <div class="main clearfix">
+   <form name="contact" method="POST" data-netlify="true">
+          <p>
+            I/We <input type="text" name="name" placeholder="Name" required /> would like to  
+            <select>
+              <option value="1" selected>choose an option</option>
+              <option value="2">collaborate</option>
+              <option value="3">have a conversation</option>
+              <option value="4">hire your services</option>
+              <option value="5">engage in an activity</option>
+            </select>
+            <br />with you regarding 
+            <select>
+              <option value="1" selected>select a topic</option>
+              <option value="2">an upcoming project</option>
+              <option value="3">our website</option>
+              <option value="4">a conference</option>
+              <option value="5">physics</option>
+              <option value="6">neuroscience</option>
+              <option value="7">chess</option>
+            </select>.
+            <br />Can we schedule a meeting on 
+            <input type="text" value="" placeholder="select a date" />
+            <br />in Pune at
+            <select>
+              <option value="1" selected>choose a location</option>
+              <option value="2">Blue Tokai, Koregaon Park</option>
+              <option value="3">Mauji, Shivajinagar</option>
+              <option value="4">Online meet</option>
+            </select>
+            <div class="nl-submit-wrap">
+              <button class="nl-submit" type="button">Book an appointment</button>
+            </div>
+                      </form>
         </div>
          
 
@@ -515,71 +492,6 @@
 
 
     
-  <script>
-    function handleActionChange() {
-      var action = document.getElementById("action").value;
-      var topicField = document.getElementById("topic-field");
-      var dateField = document.getElementById("date-field");
-      var locationField = document.getElementById("location-field");
-
-      if (action === "hire your services") {
-        dateField.style.display = "block";
-        topicField.style.display = "none";
-        locationField.style.display = "block";
-      } else if (action === "collaborate" || action === "have a conversation") {
-        dateField.style.display = "none";
-        topicField.style.display = "block";
-        locationField.style.display = "none";
-      } else {
-        dateField.style.display = "none";
-        topicField.style.display = "none";
-        locationField.style.display = "none";
-      }
-    }
-
-    function handleTopicChange() {
-      var topic = document.getElementById("topic").value;
-      var dateField = document.getElementById("date-field");
-      var locationField = document.getElementById("location-field");
-
-      if (topic === "an upcoming project") {
-        dateField.style.display = "block";
-        locationField.style.display = "block";
-      } else if (topic === "outerspace") {
-        dateField.style.display = "none";
-        locationField.style.display = "block";
-      } else {
-        dateField.style.display = "none";
-        locationField.style.display = "none";
-      }
-    }
-
-    function toggleContactInput() {
-      var contactMethod = document.getElementById("contact-method").value;
-      var contactField = document.getElementById("contact-field");
-      var contactLabel = document.getElementById("contact-label");
-
-      if (contactMethod === "phone") {
-        contactLabel.innerHTML = 'Phone Number: <input type="text" name="contact_id" placeholder="Your Phone Number" required />';
-        contactField.style.display = "block";
-      } else if (contactMethod === "gmail") {
-        contactLabel.innerHTML = 'Gmail ID: <input type="email" name="contact_id" placeholder="Your Gmail ID" required />';
-        contactField.style.display = "block";
-      } else if (contactMethod === "instagram") {
-        contactLabel.innerHTML = 'Instagram ID: <input type="text" name="contact_id" placeholder="Your Instagram ID" required />';
-        contactField.style.display = "block";
-      } else {
-        contactField.style.display = "none";
-      }
-    }
-
-    // Initialize to hide fields on page load
-    document.getElementById("date-field").style.display = "none";
-    document.getElementById("topic-field").style.display = "none";
-    document.getElementById("location-field").style.display = "none";
-    document.getElementById("contact-field").style.display = "none";
-  </script>
-
 
     
     <script
